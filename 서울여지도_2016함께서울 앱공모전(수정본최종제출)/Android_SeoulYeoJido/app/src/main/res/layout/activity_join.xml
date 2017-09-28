@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rhxorhkd.android_seoulyeojido.JoinActivity">
+
+
+    <ImageView
+        android:id="@+id/join_background"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/join_btn_back"
+        android:background="@drawable/back"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+
+    <ImageView
+        android:layout_marginTop="130dp"
+        android:background="@drawable/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/join_img" />
+
+
+
+    <EditText
+        android:textSize="11sp"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:background="@drawable/blank"
+        android:singleLine="true"
+        android:hint="이메일"
+        android:layout_centerHorizontal="true"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/join_email"
+        android:layout_above="@+id/join_nickname"
+        />
+
+    <EditText
+
+        android:textSize="11sp"
+        android:padding="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/blank"
+        android:hint="닉네임"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:layout_centerHorizontal="true"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/pw1"
+        android:id="@+id/join_nickname" />
+
+    <EditText
+        android:padding="8dp"
+        android:maxLength="12"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:layout_marginTop="14dp"
+        android:layout_above="@+id/pw2"
+        android:background="@drawable/blank"
+        android:hint="비밀번호(영문,숫자 조합 6~12자리)"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pw1" />
+
+    <EditText
+        android:padding="8dp"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:layout_marginTop="14dp"
+        android:textSize="11sp"
+        android:background="@drawable/blank"
+        android:hint="비밀번호 확인"
+        android:layout_above="@+id/done"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pw2" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/join"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:id="@+id/done" />
+
+</RelativeLayout>

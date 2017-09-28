@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="32dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/analysis_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/analysis_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginRight="8dp"
+                android:text="123313"
+                android:id="@+id/analysis_location_name"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textAlignment="center"
+                android:text=""
+                android:layout_toRightOf="@+id/analysis_location_name"
+                android:textColor="#3f51b5"
+                android:textSize="11sp"
+                android:id="@+id/analysis_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

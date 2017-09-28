@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="#ffffff"
+    android:layout_centerInParent="true">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:text="댓글입력해주세요"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView1"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="후기를 써주세요"
+        android:id="@+id/edt_review"
+        android:padding="10dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_review"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reviewSave"
+            android:layout_weight="1"
+            android:text="등록"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reviewCancel"
+            android:layout_weight="1"
+            android:text="취소"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

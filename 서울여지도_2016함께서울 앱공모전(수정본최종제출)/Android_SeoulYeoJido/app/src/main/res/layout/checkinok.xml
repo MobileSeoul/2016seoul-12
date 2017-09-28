@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:layout_height="270dp"
+    android:background="#ffffff"
+    android:layout_centerInParent="true">
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLargePopupMenu"-->
+    <!--android:text="체크인 불가 지역입니다 "-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:id="@+id/textView1"/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_checkinGIF"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/shape"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="3초후 종료됩니다 3,2,1..."-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@+id/img_checkinGIF"/>-->
+
+
+</RelativeLayout>

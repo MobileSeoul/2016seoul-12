@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "243210383161",
+    "firebase_url": "https://seoulmap-db7e1.firebaseio.com",
+    "project_id": "seoulmap-db7e1",
+    "storage_bucket": "seoulmap-db7e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243210383161:android:a257a72fc1f80df4",
+        "android_client_info": {
+          "package_name": "com.example.rhxorhkd.android_seoulyeojido"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243210383161-prc18sfpkghiiq7b569am7bkskgm7u60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rhxorhkd.android_seoulyeojido",
+            "certificate_hash": "88FD6A5F479C524E60543AA1637B626976D5B468"
+          }
+        },
+        {
+          "client_id": "243210383161-vd9ptn521ahj20ddc7jdm9f9kd9qk0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnMSA5pvyZaYUc9QphE9TEYZbGKkL_vx4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243210383161-vd9ptn521ahj20ddc7jdm9f9kd9qk0l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

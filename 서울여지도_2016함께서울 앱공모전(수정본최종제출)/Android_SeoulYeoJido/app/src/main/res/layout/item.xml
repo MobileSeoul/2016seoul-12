@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemlayout">
+
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:id="@+id/lay_textview"
+        android:textColor="#000000"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="장소이름"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/lay_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="9dp"
+        android:id="@+id/checkin_text"
+        android:layout_below="@id/lay_textview"
+        android:text="체크인"
+        android:textColor="#9e9e9e"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/lay_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="17dp"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:text="3"
+        android:id="@+id/lay_textcheckcount"
+        android:layout_below="@id/lay_textview"
+        android:layout_toRightOf="@+id/checkin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#9e9e9e"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/lay_imageview"
+        android:layout_below="@+id/checkin_text"
+        android:id="@+id/lay_textview3"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="#9e9e9e"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/lay_textview3"
+        android:layout_alignBottom="@+id/lay_textview3"
+        android:id="@+id/lay_JJUM"
+        android:text="·"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="#9e9e9e"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/lay_JJUM"
+        android:layout_alignBottom="@+id/lay_textview3"
+        android:id="@+id/lay_textview4"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_marginRight="21dp"
+        android:scaleType="fitXY"
+        android:id="@+id/lay_imageview"
+        android:src="@drawable/irene2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="horizontal" android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:id="@+id/itemlayout">-->
+
+<!--<ImageView-->
+    <!--android:id="@+id/lay_imageview"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="60dp" />-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="280dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/lay_textview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:gravity="left"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/seconditemlayout">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:gravity="left"-->
+            <!--android:text="체크인"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/lay_textcheckcount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:gravity="left"-->
+            <!--android:text="댓글"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:id="@+id/lay_reviewcheckcount"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:id="@+id/lay_textview3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:gravity="left"/>-->
+        <!--<TextView-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="|"/>-->
+        <!--<TextView-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:id="@+id/lay_textview4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:gravity="left"/>-->
+
+    <!--</LinearLayout>-->
+
+
+<!--</LinearLayout>-->
+
+<!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:id="@+id/heartimage"-->
+    <!--android:src="@drawable/heart1"/>-->
+
+<!--</LinearLayout>-->

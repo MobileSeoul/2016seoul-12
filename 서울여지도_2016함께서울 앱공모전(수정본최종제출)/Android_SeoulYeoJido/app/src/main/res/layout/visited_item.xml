@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7d7"
+        >
+
+    </View>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/visited_rl"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="40dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/visited_name"
+            android:textColor="#000000"
+            android:text="장소이름"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+
+            android:layout_toRightOf="@+id/visited_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="9dp"
+            android:id="@+id/visited_text"
+            android:layout_below="@id/visited_name"
+            android:text="체크인"
+            android:textColor="#9e9e9e"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/visited_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="17dp"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:text="3"
+            android:id="@+id/visited_cnt"
+            android:layout_below="@id/visited_name"
+            android:layout_toRightOf="@+id/visited_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+            <!--android:textColor="#9e9e9e"-->
+            <!--android:layout_marginRight="9dp"-->
+            <!--android:layout_toRightOf="@+id/visited_cnt"-->
+            <!--android:layout_below="@id/location_name"-->
+            <!--android:textSize="13sp"-->
+            <!--android:text="댓글"-->
+            <!--android:id="@+id/location_reply"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@+id/location_reply"-->
+            <!--android:layout_below="@id/location_name"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="13sp"-->
+            <!--android:text="163"-->
+            <!--android:id="@+id/reply_cnt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:id="@+id/visited_cate_gu"
+            android:textColor="#9e9e9e"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/visited_img"
+            android:layout_below="@+id/visited_text"
+            android:text="랜드마크 · 중구"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginRight="21dp"
+            android:scaleType="fitXY"
+            android:id="@+id/visited_img"
+            android:src="@drawable/irene2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+       <ImageView
+            android:layout_marginTop="6dp"
+            android:src="@drawable/after_check_in_flag"
+            android:id="@+id/flag"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/visit_background"-->
+            <!--android:background="#e38686"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/visit_name"-->
+            <!--android:text="좌"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp" />-->
+        <!--<TextView-->
+            <!--android:layout_toLeftOf="@+id/visit_mark"-->
+            <!--android:id="@+id/visit_cnt"-->
+            <!--android:text="우"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp" />-->
+        <!--<ImageView-->
+            <!--android:src="@drawable/pin"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:id="@+id/visit_mark"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp" />-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

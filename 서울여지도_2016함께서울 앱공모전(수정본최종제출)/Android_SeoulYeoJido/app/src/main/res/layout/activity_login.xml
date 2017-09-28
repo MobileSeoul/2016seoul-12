@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rhxorhkd.android_seoulyeojido.LoginActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+
+        android:background="@drawable/back"
+        android:id="@+id/login_btn_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+    
+    <ImageView
+        android:layout_marginTop="130dp"
+        android:background="@drawable/mail_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blank"
+        android:textColor="#9e9e9e"
+        android:textSize="11sp"
+        android:padding="8dp"
+        android:hint="이메일"
+        android:layout_above="@+id/pw"
+        android:layout_centerHorizontal="true"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email" />
+
+    <EditText
+        android:singleLine="true"
+        android:background="@drawable/blank"
+        android:textSize="11sp"
+        android:padding="8dp"
+        android:layout_above="@+id/find_pw"
+        android:maxLength="12"
+        android:layout_marginTop="14dp"
+        android:hint="비밀번호"
+        android:layout_centerVertical="true"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pw" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/find_password"
+        android:layout_above="@+id/submit"
+        android:id="@+id/find_pw"
+        android:layout_width="256dp"
+        android:layout_height="40dp" />
+
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/go_join"
+        android:text="로그인"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:id="@+id/submit" />
+
+    <ImageView
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/join"
+        android:layout_centerHorizontal="true"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:id="@+id/go_join" />
+
+
+
+
+</RelativeLayout>

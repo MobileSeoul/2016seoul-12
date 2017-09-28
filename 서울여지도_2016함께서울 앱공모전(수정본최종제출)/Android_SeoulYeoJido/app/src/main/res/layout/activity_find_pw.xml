@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_pw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rhxorhkd.android_seoulyeojido.FindPwActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/findpw_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/findpw_btn_back"
+        android:background="@drawable/back"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+    <EditText
+
+        android:layout_above="@+id/find_btn"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/blank"
+        android:id="@+id/find_mail"
+        android:layout_centerHorizontal="true"
+        android:textSize="11sp"
+        android:hint="이메일"
+        android:layout_width="256dp"
+        android:layout_height="40dp" />
+    <ImageView
+        android:layout_marginTop="14dp"
+        android:background="@drawable/password_mail"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/find_btn"
+        android:layout_width="256dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

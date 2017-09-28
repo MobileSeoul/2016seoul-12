@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rhxorhkd.android_seoulyeojido">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon5"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".home" />
+        <activity android:name=".rank" />
+        <activity android:name=".checkin" />
+        <activity android:name=".set" />
+        <activity
+            android:name=".DetailPage_YJ.DetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVIT"
+                android:value=".checkin" />
+        </activity>
+        <activity
+            android:name=".DetailPage_YJ.Dialog"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".DetailPage_YJ.CheckinPopup"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".DetailPage_YJ.CheckinOK"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".DetailPage_YJ.CheckinFail"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".DetailPage_YJ.ImageViewPager" />
+        <activity android:name=".DetailPage_YJ.ImageGridActivity" />
+        <activity android:name=".DetailPage_YJ.AllreviewActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".ChangeInfo" />
+        <activity android:name=".FindPwActivity" />
+        <activity android:name=".ChangePw" />
+        <activity android:name=".StartActivity">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".DetailPage_YJ.DetailMapsActivity"
+            android:label="@string/title_activity_detail_maps" />
+        <activity
+            android:name=".DetailPage_YJ.CheckinmapActivity"
+            android:label="@string/title_activity_checkinmap" />
+        <activity android:name=".LaunchSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtherSet"></activity>
+    </application>
+
+
+</manifest>

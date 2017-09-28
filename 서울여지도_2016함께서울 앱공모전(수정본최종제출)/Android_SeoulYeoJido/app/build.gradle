@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.example.rhxorhkd.android_seoulyeojido"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+
+        debug {
+            // 개발용 KEY
+            resValue "string", "google_maps_api_key", "AIzaSyAx_IBD6PNBDMMdmWV_fqfmB9uPv7ssbEg"
+        }
+
+        release {
+            resValue "string", "google_maps_api_key", "AIzaSyCjZ9soTVhljNaiE17gKwAT-6tCOmwyjbA"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-database:9.8.0'
+    compile 'com.google.firebase:firebase-storage:9.8.0'
+    compile 'com.google.firebase:firebase-auth:9.8.0'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    compile 'com.tsengvn:Typekit:1.0.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'gun0912.ted:tedpermission:1.0.2'
+    compile 'com.intuit.sdp:sdp-android:1.0.3'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

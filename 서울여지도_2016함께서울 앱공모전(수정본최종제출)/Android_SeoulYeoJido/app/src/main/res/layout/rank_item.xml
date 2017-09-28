@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="22dp"
+        android:background="#ffffff"
+        android:id="@+id/rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <TextView
+            android:id="@+id/rank_order"
+            android:text="1"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="13dp" />
+
+        <ImageView
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/profile_img"
+            android:layout_toRightOf="@+id/rank_order"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/plain_username"
+            android:text=""
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/profile_img"
+            android:layout_toLeftOf="@+id/rank_chk_cnt"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+            <!--android:text=""-->
+            <!--android:layout_toRightOf="@+id/plain_username"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textColor="#9e9e9e"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="13dp" />-->
+        <TextView
+            android:id="@+id/rank_chk_cnt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="60dp"
+            android:layout_height="18dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:background="#d7d7d7"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp">
+
+    </View>
+</LinearLayout>
